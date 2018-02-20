@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="apps," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="使用电脑手机多了，每个人都会有自己的使用习惯，会有自己的常用软件，在这里我分享下自己的常用软件。 手机-iPhone/AndroidiOS邮箱选择自带原因是与iOS的联动最好。比如点击邮件里的地址就会跳到地图。并规划路线。点击日期时间就会创建事件 网易邮箱大师这段时间翻墙不稳定，而我又有不少东西绑定在了 gmail 邮箱，网易邮箱正好可以不翻墙收发 gmail ，正好满足了我的需求">
+<meta name="keywords" content="apps">
+<meta property="og:type" content="article">
+<meta property="og:title" content="实用的60个CSS代码片段">
+<meta property="og:url" content="http://yoursite.com/2018/02/20/永奇的常用软件/index.html">
+<meta property="og:site_name" content="Yongqi&#39;s Blog">
+<meta property="og:description" content="使用电脑手机多了，每个人都会有自己的使用习惯，会有自己的常用软件，在这里我分享下自己的常用软件。 手机-iPhone/AndroidiOS邮箱选择自带原因是与iOS的联动最好。比如点击邮件里的地址就会跳到地图。并规划路线。点击日期时间就会创建事件 网易邮箱大师这段时间翻墙不稳定，而我又有不少东西绑定在了 gmail 邮箱，网易邮箱正好可以不翻墙收发 gmail ，正好满足了我的需求">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-02-20T14:28:57.695Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="实用的60个CSS代码片段">
+<meta name="twitter:description" content="使用电脑手机多了，每个人都会有自己的使用习惯，会有自己的常用软件，在这里我分享下自己的常用软件。 手机-iPhone/AndroidiOS邮箱选择自带原因是与iOS的联动最好。比如点击邮件里的地址就会跳到地图。并规划路线。点击日期时间就会创建事件 网易邮箱大师这段时间翻墙不稳定，而我又有不少东西绑定在了 gmail 邮箱，网易邮箱正好可以不翻墙收发 gmail ，正好满足了我的需求">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/02/20/永奇的常用软件/"/>
+
+
+
+
+
+  <title>实用的60个CSS代码片段 | Yongqi's Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Yongqi's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">（伪）前端工程师/读书/猫</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/20/永奇的常用软件/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yongqi">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yongqi's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">实用的60个CSS代码片段</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-20T22:03:04+08:00">
+                2018-02-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/apps/" itemprop="url" rel="index">
+                    <span itemprop="name">apps</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>使用电脑手机多了，每个人都会有自己的使用习惯，会有自己的常用软件，在这里我分享下自己的常用软件。</p>
+<h2 id="手机-iPhone-Android"><a href="#手机-iPhone-Android" class="headerlink" title="手机-iPhone/Android"></a>手机-iPhone/Android</h2><h3 id="iOS邮箱"><a href="#iOS邮箱" class="headerlink" title="iOS邮箱"></a>iOS邮箱</h3><p>选择自带原因是与iOS的联动最好。比如点击邮件里的地址就会跳到地图。并规划路线。点击日期时间就会创建事件</p>
+<h3 id="网易邮箱大师"><a href="#网易邮箱大师" class="headerlink" title="网易邮箱大师"></a>网易邮箱大师</h3><p>这段时间翻墙不稳定，而我又有不少东西绑定在了 gmail 邮箱，网易邮箱正好可以不翻墙收发 gmail ，正好满足了我的需求</p>
+<a id="more"></a>
+<h3 id="网易云音乐"><a href="#网易云音乐" class="headerlink" title="网易云音乐"></a>网易云音乐</h3><p>多端同步。挺好用的。这个看大家的习惯和账号体系在谁家。体验差不多。而且曲库也都差不多。现在好像是腾讯系的资源比阿里系好点？<br>听说网易和腾讯交叉授权啦?</p>
+<h3 id="seed-国际新闻"><a href="#seed-国际新闻" class="headerlink" title="seed-国际新闻"></a>seed-国际新闻</h3><p>这个软件是英文新闻app。点击即可查看翻译。非常适合学习英语。</p>
+<h3 id="即刻"><a href="#即刻" class="headerlink" title="即刻"></a>即刻</h3><p>新闻聚合类app。适合喜欢阅读新闻的人。喜欢看什么内容。订阅就好。交互也不错。内容也好。</p>
+<h3 id="appso"><a href="#appso" class="headerlink" title="appso"></a>appso</h3><p>少数派专门收集app的地方。对新奇app有兴趣的可以看看。交互不错。也有微信订阅号可以关注。</p>
+<h3 id="workflow"><a href="#workflow" class="headerlink" title="workflow"></a>workflow</h3><p>IOS专用。这个厉害了。现在免费了。可以自动化任务。网上有不少编好的直接下载拿来用。也可以自己写规则。不难。</p>
+<h3 id="幕布"><a href="#幕布" class="headerlink" title="幕布"></a>幕布</h3><p>这个东西就是用幕布写的。转到网上稍微编辑一下就可以用啦！</p>
+<h3 id="Keep"><a href="#Keep" class="headerlink" title="Keep"></a>Keep</h3><p>健身app，用过的人自然懂，目前做的最好的健身app</p>
+<h3 id="fooView"><a href="#fooView" class="headerlink" title="fooView"></a>fooView</h3><p>Android专用。系统增强app，可以帮你更快更简单的处理图片文字截图等。</p>
+<h3 id="酷安"><a href="#酷安" class="headerlink" title="酷安"></a>酷安</h3><p>Android专用。Android应用商店。建议刚用Android手机的来这里看看，总能发现你需要的。</p>
+<h2 id="PC-Windows-10"><a href="#PC-Windows-10" class="headerlink" title="PC-Windows 10"></a>PC-Windows 10</h2><h3 id="Listary-Windows-下快速启动工具"><a href="#Listary-Windows-下快速启动工具" class="headerlink" title="Listary-Windows 下快速启动工具"></a>Listary-Windows 下快速启动工具</h3><p>快速启动工具，相当与 Mac 的 Spotlight，可以快速启动软件或者搜索文件，生产力工具，当然不止这些功能，之前在用 Wox 的，可是不知道出了神马问题无法使用了，于是试了下其他的快速启动工具，选了这款，国人制作，免费，出色的新手引导，基本不用额外设置，好评！</p>
+<p>PS：现在又用回了 Wox 了，毕竟 UI 更合我的口味。这两个选那个都可以，差别不大。</p>
+<h3 id="Seer-Windows-下预览工具"><a href="#Seer-Windows-下预览工具" class="headerlink" title="Seer-Windows 下预览工具"></a>Seer-Windows 下预览工具</h3><p>还是源于 Mac 的功能，选中文件，按下空格预览，这里与Mac用法相同，效果也很好。<br>PS：目前在用 QuickLook，也是同功能软件，选择那个看个人喜好。</p>
+<h3 id="Snipaste-Windows-下截图工具"><a href="#Snipaste-Windows-下截图工具" class="headerlink" title="Snipaste-Windows 下截图工具"></a>Snipaste-Windows 下截图工具</h3><p>非常好用，如果对截图要求不高，Widnows 10 自带的截图快捷键 Win+Shift+S 键也可以用，摁下直接截图，并且保存到复制版，放在QQ或者微信直接</p>
+<h3 id="ADSafe-非常强大的广告拦截软件"><a href="#ADSafe-非常强大的广告拦截软件" class="headerlink" title="ADSafe-非常强大的广告拦截软件"></a>ADSafe-非常强大的广告拦截软件</h3><p>因为太强大了，所以有被监守自盗的风险，对电脑安全要求高的谨慎使用，个人支付都在手机完成，so，用这个非常省心好用</p>
+<h3 id="Potplayer-本地视频播放器"><a href="#Potplayer-本地视频播放器" class="headerlink" title="Potplayer-本地视频播放器"></a>Potplayer-本地视频播放器</h3><p>经常下载一些电影，美剧看，这款播放器不需要太多设置即可食用，本身的设置也很足，大多数人使用足够了。</p>
+<h3 id="FreeDownload-代替迅雷的下载软件"><a href="#FreeDownload-代替迅雷的下载软件" class="headerlink" title="FreeDownload-代替迅雷的下载软件"></a>FreeDownload-代替迅雷的下载软件</h3><p>我也是刚刚使用，正在试毒，界面比较讨喜，无广告，下载速度也可以，但是迅雷有P2P。建议大家试试把。</p>
+<h3 id="Typora-MarkDown-编辑器"><a href="#Typora-MarkDown-编辑器" class="headerlink" title="Typora-MarkDown 编辑器"></a>Typora-MarkDown 编辑器</h3><p>使用这款因为颜值高，免费，推荐大家学学MarkDown 语法，不难，但是效率真心高了不少。</p>
+<h3 id="TIM-QQ企业版"><a href="#TIM-QQ企业版" class="headerlink" title="TIM-QQ企业版"></a>TIM-QQ企业版</h3><p>之前的轻聊版，现在叫TIM，干净的QQ。</p>
+<h3 id="Chrome-浏览器"><a href="#Chrome-浏览器" class="headerlink" title="Chrome-浏览器"></a>Chrome-浏览器</h3><p>浏览器简介不写了，这里推荐我正在使用的插件 </p>
+<h4 id="Google翻译"><a href="#Google翻译" class="headerlink" title="Google翻译"></a>Google翻译</h4><p>好像不翻墙也能用? Google自家产品，非常好用，也可以翻译整个网页。 </p>
+<h4 id="Stylish-为任意网站自定义主题"><a href="#Stylish-为任意网站自定义主题" class="headerlink" title="Stylish-为任意网站自定义主题"></a>Stylish-为任意网站自定义主题</h4><p>不喜欢网站样式，可以换一种，可以自己写，也可以用其他人分享的，我分享一下我正在用的，用法很简单，跟着点就可以了，我就不写了 </p>
+<h5 id="Baidu-Lite-百度轻"><a href="#Baidu-Lite-百度轻" class="headerlink" title="Baidu Lite 百度轻"></a>Baidu Lite 百度轻</h5><h5 id="Douyu-Cleaner-清爽斗鱼"><a href="#Douyu-Cleaner-清爽斗鱼" class="headerlink" title="Douyu Cleaner 清爽斗鱼"></a>Douyu Cleaner 清爽斗鱼</h5><h5 id="Flat-Zhihu"><a href="#Flat-Zhihu" class="headerlink" title="Flat_Zhihu"></a>Flat_Zhihu</h5><h5 id="weibo-v6"><a href="#weibo-v6" class="headerlink" title="weibo_v6"></a>weibo_v6</h5><h4 id="简悦"><a href="#简悦" class="headerlink" title="简悦"></a>简悦</h4><p>阅读模式，国人的软件当然最了解国人使用习惯，这款为大部分网站都有适配，颜值高，我认为大家都应该有一个阅读模式的插件 </p>
+<h4 id="JSON-handle-格式化-JSON-程序员都懂。-Octotree-为-GitHub-提供一个文件数，方便切换，如果长逛的话-GitHub，强烈建议。"><a href="#JSON-handle-格式化-JSON-程序员都懂。-Octotree-为-GitHub-提供一个文件数，方便切换，如果长逛的话-GitHub，强烈建议。" class="headerlink" title="JSON-handle 格式化 JSON ,程序员都懂。 * Octotree 为 GitHub 提供一个文件数，方便切换，如果长逛的话 GitHub，强烈建议。"></a>JSON-handle 格式化 JSON ,程序员都懂。 * Octotree 为 GitHub 提供一个文件数，方便切换，如果长逛的话 GitHub，强烈建议。</h4><h3 id="SlideToShutDeown-Windows-关机"><a href="#SlideToShutDeown-Windows-关机" class="headerlink" title="SlideToShutDeown-Windows 关机"></a>SlideToShutDeown-Windows 关机</h3><p>最后这个不是神马软件，是windows 自带的关机程序，运行后，会从上出现开机画面到中间，然后往下拉这个画面到下面就关机了，多了点逼格， 文件位置在 C:\Windows\System32/SlideToShutDown.exe</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/apps/" rel="tag"># apps</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/02/20/实用的60个CSS代码片段/" rel="next" title="实用的60个CSS代码片段">
+                <i class="fa fa-chevron-left"></i> 实用的60个CSS代码片段
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Yongqi</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/yongqi-zhang" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#手机-iPhone-Android"><span class="nav-number">1.</span> <span class="nav-text">手机-iPhone/Android</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#iOS邮箱"><span class="nav-number">1.1.</span> <span class="nav-text">iOS邮箱</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网易邮箱大师"><span class="nav-number">1.2.</span> <span class="nav-text">网易邮箱大师</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网易云音乐"><span class="nav-number">1.3.</span> <span class="nav-text">网易云音乐</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#seed-国际新闻"><span class="nav-number">1.4.</span> <span class="nav-text">seed-国际新闻</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#即刻"><span class="nav-number">1.5.</span> <span class="nav-text">即刻</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#appso"><span class="nav-number">1.6.</span> <span class="nav-text">appso</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#workflow"><span class="nav-number">1.7.</span> <span class="nav-text">workflow</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#幕布"><span class="nav-number">1.8.</span> <span class="nav-text">幕布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Keep"><span class="nav-number">1.9.</span> <span class="nav-text">Keep</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fooView"><span class="nav-number">1.10.</span> <span class="nav-text">fooView</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#酷安"><span class="nav-number">1.11.</span> <span class="nav-text">酷安</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PC-Windows-10"><span class="nav-number">2.</span> <span class="nav-text">PC-Windows 10</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Listary-Windows-下快速启动工具"><span class="nav-number">2.1.</span> <span class="nav-text">Listary-Windows 下快速启动工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Seer-Windows-下预览工具"><span class="nav-number">2.2.</span> <span class="nav-text">Seer-Windows 下预览工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Snipaste-Windows-下截图工具"><span class="nav-number">2.3.</span> <span class="nav-text">Snipaste-Windows 下截图工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ADSafe-非常强大的广告拦截软件"><span class="nav-number">2.4.</span> <span class="nav-text">ADSafe-非常强大的广告拦截软件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Potplayer-本地视频播放器"><span class="nav-number">2.5.</span> <span class="nav-text">Potplayer-本地视频播放器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FreeDownload-代替迅雷的下载软件"><span class="nav-number">2.6.</span> <span class="nav-text">FreeDownload-代替迅雷的下载软件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Typora-MarkDown-编辑器"><span class="nav-number">2.7.</span> <span class="nav-text">Typora-MarkDown 编辑器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TIM-QQ企业版"><span class="nav-number">2.8.</span> <span class="nav-text">TIM-QQ企业版</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Chrome-浏览器"><span class="nav-number">2.9.</span> <span class="nav-text">Chrome-浏览器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Google翻译"><span class="nav-number">2.9.1.</span> <span class="nav-text">Google翻译</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Stylish-为任意网站自定义主题"><span class="nav-number">2.9.2.</span> <span class="nav-text">Stylish-为任意网站自定义主题</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Baidu-Lite-百度轻"><span class="nav-number">2.9.2.1.</span> <span class="nav-text">Baidu Lite 百度轻</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Douyu-Cleaner-清爽斗鱼"><span class="nav-number">2.9.2.2.</span> <span class="nav-text">Douyu Cleaner 清爽斗鱼</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Flat-Zhihu"><span class="nav-number">2.9.2.3.</span> <span class="nav-text">Flat_Zhihu</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#weibo-v6"><span class="nav-number">2.9.2.4.</span> <span class="nav-text">weibo_v6</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#简悦"><span class="nav-number">2.9.3.</span> <span class="nav-text">简悦</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#JSON-handle-格式化-JSON-程序员都懂。-Octotree-为-GitHub-提供一个文件数，方便切换，如果长逛的话-GitHub，强烈建议。"><span class="nav-number">2.9.4.</span> <span class="nav-text">JSON-handle 格式化 JSON ,程序员都懂。 * Octotree 为 GitHub 提供一个文件数，方便切换，如果长逛的话 GitHub，强烈建议。</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SlideToShutDeown-Windows-关机"><span class="nav-number">2.10.</span> <span class="nav-text">SlideToShutDeown-Windows 关机</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yongqi</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
